@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Table of contents
+- [Table of contents](#table-of-contents)
+  - [Docs](#docs)
+  - [Steps](#steps)
+    - [Get my profile](#get-my-profile)
+  - [How to get the new url, dynamic routing](#how-to-get-the-new-url-dynamic-routing)
+    - [Extra packages](#extra-packages)
+  - [todo](#todo)
+  - [???](#)
 
-## Getting Started
 
-First, run the development server:
+## Docs
+- (Lens)[https://docs.lens.xyz/docs/api-links]
+- (Get profile)[https://docs.lens.xyz/docs/get-profile]
+- (Get user posts)[https://docs.lens.xyz/docs/publication-1]
 
-```bash
-npm run dev
-# or
-yarn dev
+
+## Steps
+- Start a new Next project
+- Get the basic boilerplate GraphQL `apollo-client.js`
+- Wrap `_app.js` around the `ApolloProvider`
+- Do & Modularize the request for *recommendProfiles* in `index.js`
+- Install & add tawilind stuff (.config, npm & imports in `styles/globals.css`)
+- Do a dynamic routing for every profile along whit another Query stuff (`queries/fetchEntireProfile.js`, `pages/profile/[id].js`)
+
+
+### Get my profile
+- get Dec id from (LensFrens)[https://www.lensfrens.xyz/hachikoi.lens]
+- Parse to Hex and (wualah)[http://localhost:3000/profile/0xa9da]
+
+
+## How to get the new url, dynamic routing
+```js
+import { useRouter } from "next/router";
+
+// inside RFC
+const router = useRouter();
+const { id } = router.query;
+// TODO: find a better way to do this
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Extra packages
+**Connect whit Lens API**
+- npm install @apollo/client graphql
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+**Tailwind**
+- npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## todo
+- do a custom page for loading & load error
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ???
+- "𒐪"
+  
