@@ -5,7 +5,6 @@
     - [Get my profile](#get-my-profile)
   - [How to get the new url, dynamic routing](#how-to-get-the-new-url-dynamic-routing)
     - [Extra packages](#extra-packages)
-  - [todo](#todo)
   - [???](#)
 
 
@@ -47,9 +46,6 @@ const { id } = router.query;
 **Tailwind**
 - npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
-
-## todo
-- do a custom page for loading & load error
 
 
 ## ???
