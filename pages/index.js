@@ -14,7 +14,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className="bg-[#323232]">
       {data.recommendedProfiles.map((profile, index) => {
         // if (index < 2) {
         //   console.log(`Profile ${index}:`, profile);

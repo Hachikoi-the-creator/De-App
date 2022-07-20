@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Profile({ profile, displayFullProfile, key }) {
   return (
-    <div className="p-8" key={key}>
-      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div className="p-8 pt-20" key={key}>
+      <div className="max-w-md mx-auto bg-[#ffffffc5] rounded-xl shadow-md overflow-hidden md:max-w-2xl shadow-lg shadow-blue-300">
         <div className="md:flex">
           <Link href={`/profile/${profile.id}`}>
             <div className="md:shrink-0">
